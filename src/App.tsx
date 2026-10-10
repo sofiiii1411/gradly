@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import Overview from './pages/Overview';
 import DigitalTwin from './pages/DigitalTwin';
+import logo from './assets/logo.png';
 
 function App() {
   const [activeTab, setActiveTab] = useState('overview');
@@ -28,10 +29,13 @@ function App() {
       {/* Sidebar */}
       <aside className="sidebar">
         <div className="sidebar-header">
-          <div className="brand-icon">
-            <Building2 size={20} />
+          <div className="brand-logo-container">
+            <img src={logo} alt="Gradly Logo" className="brand-logo-img" />
           </div>
-          <div className="brand-title">BMS SentinelAI</div>
+          <div className="brand-text">
+            <div className="brand-title">Gradly</div>
+            <div className="brand-tagline">Your Grades, Simplified.</div>
+          </div>
         </div>
         
         <div className="sidebar-nav">
