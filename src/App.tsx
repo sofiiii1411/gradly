@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import Overview from './pages/Overview';
 import DigitalTwin from './pages/DigitalTwin';
-import logo from './assets/logo.png';
+import logoIcon from './assets/logo-icon.png';
 
 function App() {
   const [activeTab, setActiveTab] = useState('overview');
@@ -30,7 +30,7 @@ function App() {
       <aside className="sidebar">
         <div className="sidebar-header">
           <div className="brand-logo-container">
-            <img src={logo} alt="Gradly Logo" className="brand-logo-img" />
+            <img src={logoIcon} alt="Gradly Icon" className="brand-logo-img" />
           </div>
           <div className="brand-text">
             <div className="brand-title">Gradly</div>
